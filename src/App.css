@@ -74,5 +74,47 @@ body {
   z-index: -1;
 }
 
+body, .landing-root {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  margin: 0; /* Override any inherited */
+  padding-top: 0; /* Remove top space */
+}
+
+/* Vue Toast Parity: White bg, colored icons/borders */
+.Vue-Toastification__toast {
+  background: #ffffff !important;  /* White bg */
+  border: 1px solid #e5e7eb !important;  /* Light border */
+  color: #0f172a !important;  /* Dark text */
+  border-radius: 8px !important;
+}
+
+.Vue-Toastification__toast-icon {
+  color: #3b82f6 !important;  /* Blue icon default */
+}
+
+.Vue-Toastification__toast--success .Vue-Toastification__toast-icon {
+  color: #16a34a !important;  /* Green accent for success */
+}
+
+.Vue-Toastification__toast--error .Vue-Toastification__toast-icon {
+  color: #ef4444 !important;  /* Red accent for error */
+}
+
+.Vue-Toastification__toast--success {
+  border-left: 4px solid #16a34a !important;  /* Green left border */
+}
+
+.Vue-Toastification__toast--error {
+  border-left: 4px solid #ef4444 !important;  /* Red left border */
+}
+
+.Vue-Toastification__progress-bar {
+  background: #3b82f6 !important;  /* Blue progress */
+}
+
 /* Responsive */
 @media (max-width: 768px) { .app-wrapper { padding: 0 15px; } }
